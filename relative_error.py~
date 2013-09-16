@@ -1,0 +1,30 @@
+from scitools.std import *
+import os
+"""
+_file = 'navnet.cpp'
+os.system('g++ -c %s' % _file)
+"""
+def relative_error():
+		
+	import subprocess
+	from subprocess import Popen
+	
+		
+	log_h = []
+	error = []		
+		
+	n_values = linspace(0, 10**7, 100)
+	for N in n_values :
+		n = int(N)
+		os.system("g ++ main.cpp")
+		os.system("./a.out %s" % n)
+		#p = Popen(["main.cpp", "n"])		
+		#epsilon  = log10( abs((self.v-self.u)/self.u))
+		error.append(max(epsilon))
+		log_h.append(log10(1.0/(n+1.0)))
+	
+	error = array(error)
+	log_h = array(log_h)
+	#plot(log_h, error)
+
+y = relative_error()

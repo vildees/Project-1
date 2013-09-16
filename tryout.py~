@@ -1,0 +1,5 @@
+from scitools.std import *
+
+n = argv[1]
+
+print n
